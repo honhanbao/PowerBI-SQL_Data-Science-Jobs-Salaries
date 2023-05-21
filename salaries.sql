@@ -1,8 +1,11 @@
 
 -- Task 1: Top 10 popular job title -- 
 
--- show top 50 rows--
+-- Create 2 tables:
+	-- One table of job title frequency
+	-- One table of job frequency of top 10 popular job title
 
+-- show top 50 rows--
 	Select 
 		top 50 * 
 	from salaries;
@@ -53,7 +56,7 @@
 	from #job_count
 	order by count desc;
 
--- create table popular_titles --
+-- create table of 10 popular_titles --
 	Create table popular_job_titles (
 		job_title	char(50),
 		counts		int
